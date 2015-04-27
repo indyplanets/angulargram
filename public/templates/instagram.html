@@ -1,0 +1,21 @@
+<h3>Sputnik's Instagram</h3>
+
+<p ng-bind-template="Total number of photos: {{ photos.data.length }}">Total number of photos:</p>
+<button ng-click="action= !action">Fade In</button>
+<p>Sort by:
+<select ng-model="orderProp" ng-change="instagramApp.fadeIt()">
+  <option value="created_time">Oldest to Newest</option>
+  <option value="-created_time">Newest to Oldest</option>
+  <option value="-likes.count">Most Likes</option>
+  <option value="likes.count">least Likes</option>
+</select>
+</p>
+<p>Filter: <input ng-model="query"></p>
+
+<ul ng-class="action ? 'is-hidden' : ''" class="instagram-list grid" hide-me="instagramApp.isHidden">
+  <li class="instagram-item" ng-repeat="photo in photos.data | filter:query | orderBy:orderProp">
+    <a href="#/photos/{{ photo.id }}" data-url="{{ photo.link }}" data-id="{{ photo.id }}" data-created-time="{{ photo.created_time | date : format : timezone}}" data-likes="{{ photo.likes.count }}">
+      <img ng-src="{{ photo.images.low_resolution.url }}">
+    </a>
+  </li>
+</ul>

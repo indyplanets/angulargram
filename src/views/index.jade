@@ -1,0 +1,231 @@
+doctype html
+//if IE 8
+  <html class="ie8">
+// [if gt IE 8] <!
+html(class="", lang="en")
+  // <![endif]
+  include ../partials/head
+  body
+    block link
+      -var current = null; //default
+      #main-wrap
+        include ../partials/header
+        .main(role="main")
+          .section.alt.first-section
+            .flex
+              .g1-flex4.g2-flex6.g3-flex8.g3-offset2
+                h1.alpha.center.reverse Heading One
+                p.center.reverse.large {.large} Bacon ipsum dolor sit amet pastrami chuck andouille, shankle jerky drumstick chicken frankfurter fatback. Ham hock tri-tip andouille turducken. Ground round meatball landjaeger, tri-tip porchetta salami shankle sausage strip steak kevin bacon jerky t-bone ham.
+              
+          .section
+            .flex
+              .g1-flex4.g2-flex3.g3-flex7
+                h1.alpha Heading One
+                .subtext Subhead Text
+                p.large {.large} Bacon ipsum dolor sit amet pastrami chuck andouille, shankle jerky drumstick chicken frankfurter fatback. Ham hock tri-tip andouille turducken. Ground round meatball landjaeger, tri-tip porchetta salami shankle sausage strip steak kevin bacon jerky t-bone ham.
+                
+                h2.beta Heading Two
+                p Bacon ipsum dolor sit amet pastrami chuck andouille, shankle jerky drumstick chicken frankfurter fatback. Ham hock tri-tip andouille turducken. Ground round meatball landjaeger, tri-tip porchetta salami shankle sausage strip steak kevin bacon jerky t-bone ham.
+
+                h3.gamma Heading Three
+                p Bacon ipsum dolor sit amet pastrami chuck andouille, shankle jerky drumstick chicken frankfurter fatback. Ham hock tri-tip andouille turducken. Ground round meatball landjaeger, tri-tip porchetta salami shankle sausage strip steak kevin bacon jerky t-bone ham.
+
+                h4.delta Heading Four
+                p Bacon ipsum dolor sit amet pastrami chuck andouille, shankle jerky drumstick chicken frankfurter fatback. Ham hock tri-tip andouille turducken. Ground round meatball landjaeger, tri-tip porchetta salami shankle sausage strip steak kevin bacon jerky t-bone ham.
+
+                h5.epsilon Heading Five
+                p Bacon ipsum dolor sit amet pastrami chuck andouille, shankle jerky drumstick chicken frankfurter fatback. Ham hock tri-tip andouille turducken. Ground round meatball landjaeger, tri-tip porchetta salami shankle sausage strip steak kevin bacon jerky t-bone ham.
+
+                h6.zeta Heading Six
+                p Bacon ipsum dolor sit amet pastrami chuck andouille, shankle jerky drumstick chicken frankfurter fatback. Ham hock tri-tip andouille turducken. Ground round meatball landjaeger, tri-tip porchetta salami shankle sausage strip steak kevin bacon jerky t-bone ham.
+
+              .g1-flex4.g2-flex3.g3-flex5.push
+                form
+                  .label-wrap
+                    label Form Field label
+                    input(type='text', placeholder='e.g. Jane')
+                  .label-wrap
+                    label Form Field label
+                    input(type='email', placeholder='e.g. Doe')
+                  
+                  .label-wrap
+                    a.btn(href="") Link Button
+                        
+                .box 
+                  .box-body
+                    h2.gamma.center Simple Box
+                    p Bacon ipsum dolor sit amet pastrami chuck andouille, shankle jerky drumstick chicken frankfurter fatback. Ham hock tri-tip andouille turducken. Bacon ipsum dolor sit amet pastrami chuck andouille, shankle jerky.
+                    
+                .box.alt
+                  header
+                    h2.gamma.center Alt Box w Header
+                  .box-body
+                    .g1-flex4.g2-flex6.g3-flex6
+                      .label-wrap
+                        label First Name
+                        input(type='text', placeholder='e.g. Jane')
+                    .g1-flex4.g2-flex6.g3-flex6
+                      .label-wrap
+                        label Last Name
+                        input(type='text', placeholder='e.g. Doe')
+                    .g1-flex4.g2-flex6.g3-flex8
+                      .label-wrap
+                        label email
+                        input(type='email', placeholder='e.g. company@company.com')
+                    .g1-flex4.g2-flex6.g3-flex4
+                      .label-wrap
+                        label.hidden submit
+                        button.btn.alt.push(type='button', value="button") Submit
+          
+            .flex
+              .g1-flex4.g2-flex6.g3-flex12
+                h2.beta.center Lists 
+              .g1-flex4.g2-flex6.g3-flex12          
+                .g1-flex4.g2-flex3.g3-flex3
+                  h3.epsilon.caps.center Unordered Lists
+                  ul  
+                    li Filet mignon item
+                    li Frankfurter pig item
+                    li Leberkas item
+                    li Short ribs meatball item
+                .g1-flex4.g2-flex3.g3-flex3
+                  h3.epsilon.caps.center List Bullets
+                  ul.bullets      
+                    li Tri-tip tongue item
+                    li Frankfurter pig item
+                    li Leberkas item
+                    li Short ribs meatball item
+                .g1-flex4.g2-flex3.g3-flex3
+                  h3.epsilon.caps.center Ordered Lists
+                  ol   
+                    li Filet mignon item
+                    li Frankfurter pig item
+                    li Leberkas item
+                    li Short ribs meatball item
+                .g1-flex4.g2-flex3.g3-flex3
+                  h3.epsilon.caps.center Definition Lists
+                  dl   
+                    dt Leberkas item
+                    dd Short ribs meatball item
+                    dd Frankfurter pig item
+                    dd Filet mignon item
+
+
+              .flex
+                .g1-flex4.g2-flex6.g3-flex12
+                  h2.beta.center Grid Default {.flex}
+              .flex
+                .g1-flex4.g2-flex6.g3-flex12
+                  .grid-block {.g1-flex4.g2-flex6.g3-flex12}
+                .g1-flex4.g2-flex6.g3-flex6
+                  .grid-block {.g1-flex4.g2-flex6.g3-flex6}
+                .g1-flex4.g2-flex6.g3-flex6
+                  .grid-block {.g1-flex4.g2-flex6.g3-flex6}
+                .g1-flex2.g2-flex3.g3-flex6
+                  .grid-block {.g1-flex2.g2-flex3.g3-flex6}
+                .g1-flex2.g2-flex3.g3-flex6
+                  .grid-block {.g1-flex2.g2-flex3.g3-flex6}
+                .g1-flex4.g2-flex2.g3-flex4
+                  .grid-block {.g1-flex4.g2-flex2.g3-flex4}
+                .g1-flex4.g2-flex2.g3-flex4
+                  .grid-block {.g1-flex4.g2-flex2.g3-flex4}
+                .g1-flex4.g2-flex2.g3-flex4
+                  .grid-block {.g1-flex4.g2-flex2.g3-flex4}
+                .g1-flex4.g2-flex3.g3-flex3
+                  .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+                .g1-flex4.g2-flex3.g3-flex3
+                  .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+                .g1-flex4.g2-flex3.g3-flex3
+                  .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+                .g1-flex4.g2-flex3.g3-flex3
+                  .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+
+            .flex.flex-wide
+              .g1-flex4.g2-flex6.g3-flex12
+                h2.beta.center Grid Wide {.flex.flex-wide}
+              .g1-flex4.g2-flex6.g3-flex12
+                .grid-block {.g1-flex4.g2-flex6.g3-flex12}
+              .g1-flex4.g2-flex6.g3-flex6
+                .grid-block {.g1-flex4.g2-flex6.g3-flex6}
+              .g1-flex4.g2-flex6.g3-flex6
+                .grid-block {.g1-flex4.g2-flex6.g3-flex6}
+              .g1-flex2.g2-flex3.g3-flex6
+                .grid-block {.g1-flex2.g2-flex3.g3-flex6}
+              .g1-flex2.g2-flex3.g3-flex6
+                .grid-block {.g1-flex2.g2-flex3.g3-flex6}
+              .g1-flex4.g2-flex2.g3-flex4
+                .grid-block {.g1-flex4.g2-flex2.g3-flex4}
+              .g1-flex4.g2-flex2.g3-flex4
+                .grid-block {.g1-flex4.g2-flex2.g3-flex4}
+              .g1-flex4.g2-flex2.g3-flex4
+                .grid-block {.g1-flex4.g2-flex2.g3-flex4}
+              .g1-flex4.g2-flex3.g3-flex3
+                .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+              .g1-flex4.g2-flex3.g3-flex3
+                .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+              .g1-flex4.g2-flex3.g3-flex3
+                .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+              .g1-flex4.g2-flex3.g3-flex3
+                .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+                  
+            .flex.flex-extra-wide
+              .g1-flex4.g2-flex6.g3-flex12
+                h2.beta.center Grid Extra Wide {.flex.flex-extra-wide}
+              .g1-flex4.g2-flex6.g3-flex12
+                .grid-block {.g1-flex4.g2-flex6.g3-flex12}
+              .g1-flex4.g2-flex6.g3-flex6
+                .grid-block {.g1-flex4.g2-flex6.g3-flex6}
+              .g1-flex4.g2-flex6.g3-flex6
+                .grid-block {.g1-flex4.g2-flex6.g3-flex6}
+              .g1-flex2.g2-flex3.g3-flex6
+                .grid-block {.g1-flex2.g2-flex3.g3-flex6}
+              .g1-flex2.g2-flex3.g3-flex6
+                .grid-block {.g1-flex2.g2-flex3.g3-flex6}
+              .g1-flex4.g2-flex2.g3-flex4
+                .grid-block {.g1-flex4.g2-flex2.g3-flex4}
+              .g1-flex4.g2-flex2.g3-flex4
+                .grid-block {.g1-flex4.g2-flex2.g3-flex4}
+              .g1-flex4.g2-flex2.g3-flex4
+                .grid-block {.g1-flex4.g2-flex2.g3-flex4}
+              .g1-flex4.g2-flex3.g3-flex3
+                .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+              .g1-flex4.g2-flex3.g3-flex3
+                .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+              .g1-flex4.g2-flex3.g3-flex3
+                .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+              .g1-flex4.g2-flex3.g3-flex3
+                .grid-block {.g1-flex4.g2-flex3.g3-flex3}
+                
+            .flex
+              .g1-flex4.g2-flex6.g3-flex12
+                h2.beta.center Grid Offsets {.flex}
+              .g1-flex4.g2-flex6.g3-flex10.g3-offset1
+                .grid-block {.g1-flex4.g2-flex6.g3-flex10.g3-offset1}
+              .g1-flex4.g2-flex6.g3-flex8.g3-offset2
+                .grid-block {.g1-flex4.g2-flex6.g3-flex8.g3-offset2}
+              .g1-flex4.g2-flex6.g3-flex6.g3-offset3
+                .grid-block {.g1-flex4.g2-flex6.g3-flex6.g3-offset3}
+                
+            .flex.flex-wide
+              .g1-flex4.g2-flex6.g3-flex12
+                h2.beta.center Grid Offsets Wide {.flex.flex-wide}
+              .g1-flex4.g2-flex6.g3-flex10.g3-offset1
+                .grid-block {.g1-flex4.g2-flex6.g3-flex10.g3-offset1}
+              .g1-flex4.g2-flex6.g3-flex8.g3-offset2
+                .grid-block {.g1-flex4.g2-flex6.g3-flex8.g3-offset2}
+              .g1-flex4.g2-flex6.g3-flex6.g3-offset3
+                .grid-block {.g1-flex4.g2-flex6.g3-flex6.g3-offset3}
+                
+            .flex.flex-extra-wide
+              .g1-flex4.g2-flex6.g3-flex12
+                h2.beta.center Grid Offsets Extra Wide {.flex.flex-extra-wide}
+              .g1-flex4.g2-flex6.g3-flex10.g3-offset1
+                .grid-block {.g1-flex4.g2-flex6.g3-flex10.g3-offset1}
+              .g1-flex4.g2-flex6.g3-flex8.g3-offset2
+                .grid-block {.g1-flex4.g2-flex6.g3-flex8.g3-offset2}
+              .g1-flex4.g2-flex6.g3-flex6.g3-offset3
+                .grid-block {.g1-flex4.g2-flex6.g3-flex6.g3-offset3}
+
+
+      include ../partials/footer
+      include ../partials/foot

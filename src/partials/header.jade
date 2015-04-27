@@ -1,0 +1,19 @@
+header(role="banner")
+  .flex
+    .g1-flex4.g2-flex6.g3-flex12
+      h1
+        a(href="/").site-title.ir <%= title %>
+      nav(role="navigation")
+        block link
+        -var menu = { 'Nav one': '', 'Nav two': '', 'Nav three': '', 'Nav four': '', 'Nav five': ''};
+          ul.nav-extras
+            //- li.menu-button
+            li
+              a.btn.alt(href="") Sign Up
+          ul.main-nav
+            each val, key in menu
+              li.nav-item.delta
+                if current === key
+                  a.current(href=val)= key
+                else
+                  a(href=val)= key

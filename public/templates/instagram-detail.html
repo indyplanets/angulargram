@@ -1,0 +1,14 @@
+<p><a href="/#/photos">&larr; Back</a></p>
+<h3>Sputnik's Instagram Detail</h3>
+
+<ul>
+  <li>Likes: {{ photo.data.likes.count }}</li>
+  <li>
+    <span ng-if="photo.data.tags.length">Tags:</span>
+    <span ng-repeat-start="tag in photo.data.tags">{{ tag }}, </span>
+    <span ng-repeat-end>{{ tag }}</span>
+  </li>
+  <li></li>
+</ul>
+
+<img ng-src="{{ photo.data.images.standard_resolution.url }}">

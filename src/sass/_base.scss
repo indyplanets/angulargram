@@ -1,0 +1,288 @@
+// colors
+$color-1: #31b4e4;
+$color-2: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $color-2;
+  background-color: white;
+}
+
+a{
+  text-decoration: none;
+  color: $color-1;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+
+  li {
+
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  &.grid {
+
+    li {
+      width: 20%;
+      float: left;
+      padding: 0 1px 1px 0;
+    }
+  }
+  &.column {
+
+    li {
+      width: 100%;
+    }
+
+  }
+}
+.toggle {
+  -webkit-transition: 1s linear opacity;
+  transition: 1s linear opacity;
+}
+
+.toggle.ng-enter {
+  opacity: 0;
+}
+
+.toggle.ng-enter-active {
+  opacity: 1;
+}
+
+.toggle.ng-leave {
+  opacity: 1;
+}
+
+.toggle.ng-leave-active {
+  opacity: 0;
+}
+
+// --- end base styles -------------------------------
+
+
+.flex {
+  *zoom: 1;
+  position: relative;
+  clear: both;
+  padding: 8px 16px;
+  display: block;
+  max-width: 1115px;
+  max-width: 69.6875rem;
+  margin: 0 auto; }
+  .flex:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .flex.flex-wide {
+    max-width: 1300px;
+    max-width: 81.25rem; }
+  .flex.flex-extra-wide {
+    max-width: 1800px;
+    max-width: 112.5rem; }
+  .flex.tuck {
+    padding: 0 16px; }
+  .flex .g1-flex1 {
+    float: left;
+    width: 25%;
+    padding: 0 16px;
+    padding: 0 1rem; }
+    .flex .g1-flex1.push {
+      float: right; }
+  .flex .g1-flex2 {
+    float: left;
+    width: 50%;
+    padding: 0 16px;
+    padding: 0 1rem; }
+    .flex .g1-flex2.push {
+      float: right; }
+  .flex .g1-flex3 {
+    width: 75%;
+    padding: 0 16px;
+    padding: 0 1rem; }
+    .flex .g1-flex3.push {
+      float: right; }
+  .flex .g1-flex4 {
+    float: left;
+    width: 100%;
+    padding: 0 16px;
+    padding: 0 1rem; }
+    .flex .g1-flex4.push {
+      float: right; }
+  .flex .g1-hide, .flex .g2-hide {
+    display: none; }
+  .flex .g1-show {
+    display: block; }
+  .flex .flex-nested:first-child, .flex .flex-nested.g1-flex4:last-child {
+    padding-left: 0; }
+  @media all and (min-width: 43.75em) {
+    .flex .g2-flex1 {
+      float: left;
+      width: 16.66667%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g2-flex1.push {
+        float: right; }
+    .flex .g2-flex2 {
+      float: left;
+      width: 33.33333%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g2-flex2.push {
+        float: right; }
+    .flex .g2-flex3 {
+      float: left;
+      width: 50%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g2-flex3.push {
+        float: right; }
+    .flex .g2-flex4 {
+      float: left;
+      width: 66.66667%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g2-flex4.push {
+        float: right; }
+    .flex .g2-flex5 {
+      float: left;
+      width: 83.33333%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g2-flex5.push {
+        float: right; }
+    .flex .g2-flex6 {
+      width: 100%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g2-flex6.push {
+        float: right; }
+    .flex .g2-show {
+      display: block; }
+    .flex .g2-hide {
+      display: none; }
+    .flex .flex-nested:last-child {
+      padding-right: 0; }
+    .flex .flex-nested.g1-flex4:last-child {
+      padding-left: 16px;
+      padding-left: 1rem; }
+    .flex .flex-nested.g1-flex4:first-child {
+      padding-left: 0; } }
+  @media all and (min-width: 65.875em) {
+    .flex .g3-flex1 {
+      float: left;
+      width: 8.33333%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex1.push {
+        float: right; }
+    .flex .g3-flex2 {
+      float: left;
+      width: 16.66667%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex2.push {
+        float: right; }
+    .flex .g3-flex3 {
+      float: left;
+      width: 25%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex3.push {
+        float: right; }
+    .flex .g3-flex4 {
+      float: left;
+      width: 33.33333%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex4.push {
+        float: right; }
+    .flex .g3-flex5 {
+      float: left;
+      width: 41.66667%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex5.push {
+        float: right; }
+    .flex .g3-flex6 {
+      float: left;
+      width: 50%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex6.push {
+        float: right; }
+    .flex .g3-flex7 {
+      float: left;
+      width: 58.33333%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex7.push {
+        float: right; }
+    .flex .g3-flex8 {
+      float: left;
+      width: 66.66667%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex8.push {
+        float: right; }
+    .flex .g3-flex9 {
+      float: left;
+      width: 75%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex9.push {
+        float: right; }
+    .flex .g3-flex10 {
+      float: left;
+      width: 83.33333%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex10.push {
+        float: right; }
+    .flex .g3-flex11 {
+      float: left;
+      width: 91.66667%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex11.push {
+        float: right; }
+    .flex .g3-flex12 {
+      width: 100%;
+      padding: 0 16px;
+      padding: 0 1rem; }
+      .flex .g3-flex12.push {
+        float: right; }
+    .flex .g3-show {
+      display: block; }
+    .flex .g3-hide {
+      display: none; }
+    .flex .g3-offset1 {
+      margin-left: 8.4%; }
+    .flex .g3-offset2 {
+      margin-left: 16.8%; }
+    .flex .g3-offset3 {
+      margin-left: 25.2%; } }
+
+html {
+  font-size: 80%; }
+
+@media all and (min-width: 43.75em) {
+  html {
+    font-size: 94%; } }
+@media all and (min-width: 65.875em) {
+  html {
+    font-size: 100%; } }
